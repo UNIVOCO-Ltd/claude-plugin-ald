@@ -1,0 +1,11 @@
+{
+  "name": "ald-tools",
+  "owner": { "name": "UNIVOCO" },
+  "plugins": [
+    {
+      "name": "ald",
+      "source": "./",
+      "description": "ALD assistant connector (RAGLAND-backed)."
+    }
+  ]
+}

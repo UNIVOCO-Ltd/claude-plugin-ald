@@ -1,0 +1,6 @@
+{
+  "jsfom": {
+    "description": "JavaScript FOM (Formatting Object Model): scripting ALD via the JS FOM API — objects, methods, properties, and code examples.",
+    "when_to_use": "Use for questions about JavaScript scripting, FOM objects/methods, or writing/debugging FOM code."
+  }
+}

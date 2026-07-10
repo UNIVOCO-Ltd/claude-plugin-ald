@@ -1,0 +1,10 @@
+# Local Claude Code dev state — must NOT ship in the published marketplace repo.
+# (contains disabledMcpjsonServers, which would load the ragland server disabled)
+.claude/*
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Local RAGLAND credentials, if ever created in-tree
+.ragland/

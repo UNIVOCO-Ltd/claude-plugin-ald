@@ -1,0 +1,9 @@
+{
+  "name": "ald",
+  "displayName": "ALD Assistant",
+  "description": "Arbortext Layout Developer (ALD) assistant, backed by the ALD RAGLAND knowledge base.",
+  "version": "0.1.0",
+  "author": { "name": "UNIVOCO" },
+  "repository": "https://github.com/UNIVOCO-Ltd/claude-plugin-ald",
+  "keywords": ["mcp", "rag", "ald", "arbortext", "fom"]
+}

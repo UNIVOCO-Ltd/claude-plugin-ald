@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "ragland": {
+      "command": "uv",
+      "args": ["run", "${CLAUDE_PLUGIN_ROOT}/server.py"],
+      "env": {
+        "RAGLAND_BASE_URL": "https://rag4.univoco.io",
+        "RAGLAND_MCP_STYLES": "jsfom",
+        "RAGLAND_MCP_STYLE_INFO_FILE": "${CLAUDE_PLUGIN_ROOT}/styles.json",
+        "RAGLAND_MCP_INSTRUCTIONS_FILE": "${CLAUDE_PLUGIN_ROOT}/instructions.md"
+      }
+    }
+  }
+}

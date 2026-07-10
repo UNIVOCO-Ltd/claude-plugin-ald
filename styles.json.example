@@ -1,0 +1,14 @@
+{
+  "jsfom": {
+    "description": "JavaScript FOM (Formatting Object Model): scripting ALD via the JS FOM API — objects, methods, properties, and code examples.",
+    "when_to_use": "Use for questions about JavaScript scripting, FOM objects/methods, or writing/debugging FOM code."
+  },
+  "tcode": {
+    "description": "Tag/transformation code (T-code): tag rules and transformation logic, with examples.",
+    "when_to_use": "Use for questions about tag code, transformation rules, or T-code syntax and examples."
+  },
+  "default": {
+    "description": "General ALD, spanning all areas (broadest retrieval across every namespace).",
+    "when_to_use": "Use only for general/cross-cutting ALD questions that don't clearly belong to jsfom or tcode."
+  }
+}
