@@ -61,6 +61,27 @@ RAGLAND_BASE_URL=http://localhost:8001 claude --plugin-dir /media/joe/LAPTOPXTRA
 # /mcp → "ald" connected;  then authenticate() with a local ALD key
 ```
 
+## Troubleshooting
+
+### Claude Desktop (macOS): `ragland` won't connect / `spawn uv ENOENT`
+
+The plugin runs its server with `uv run`. On **macOS**, Claude Desktop launches plugin servers with
+a **minimal `PATH`** that omits `~/.local/bin` and `/opt/homebrew/bin`, so it can fail to find `uv`
+even though `uv` works fine in your terminal. (Windows is normally unaffected — GUI apps there
+inherit your user `PATH`.)
+
+**Symptom:** the plugin's MCP / Errors view shows `ragland` failed to start with `spawn uv ENOENT`.
+
+**Fix** — symlink `uv` into a directory Desktop *does* see (run in Terminal, where `uv` is on
+`PATH`), then fully quit and reopen Claude Desktop:
+
+```bash
+sudo ln -sf "$(command -v uv)" /usr/local/bin/uv
+```
+
+`/usr/local/bin` is part of the app's default `PATH`, so `uv` resolves after this. Installing `uv`
+system-wide (e.g. `brew install uv`, which links into a standard prefix) achieves the same thing.
+
 ## Cloning to another domain (the template)
 
 This directory **is** the template. To make `claude-plugin-<domain>`:
